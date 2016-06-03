@@ -12,7 +12,6 @@ import org.springframework.web.servlet.mvc.AbstractController;
  * 控制器
  *
  */
-@Controller
 public class UserController extends AbstractController {
 
     @Override
