@@ -22,7 +22,7 @@
 		  </property>
 	    </bean>
 	-->
-	<!--  根据ControllerClassName找到对应的Controller-->
+	<!-- 3.根据ControllerClassName找到对应的Controller-->
 	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
 	</bean>
 	<!-- 配置 HelloController -->
