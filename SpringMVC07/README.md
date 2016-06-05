@@ -1,7 +1,7 @@
 ###返回页面数据：Model
   1) HttpServletRequest request直接使用
     
-    > request.setAttribute("username", username);
+    request.setAttribute("username", username);
   
   
   2)使用ModelAndView
