@@ -5,6 +5,7 @@
   
   
   2)使用ModelAndView
+  
     
    m_v.addObject("username", username);
   
