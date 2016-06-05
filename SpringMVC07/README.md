@@ -1,4 +1,4 @@
-返回页面数据：Model<br/>
+>返回页面数据：Model<br/>
   1)HttpServletRequest request直接使用<br/>
     request.setAttribute("username", username);<br/>
   2)使用ModelAndView<br/>
