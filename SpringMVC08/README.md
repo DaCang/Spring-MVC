@@ -1,6 +1,6 @@
 #Spring MVC Ajax demo
 >important code in /SpringMVC08/WebContent/user_info.jsp
-    <script type="text/javascript">
+    ````<script type="text/javascript">
             $().ready(function(){
         	$("#validator").click(function(){
         		var userNum=$("#userNum").val();
@@ -22,4 +22,4 @@
         	});
 	
         });
-</script>'
+</script>````
