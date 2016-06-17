@@ -10,7 +10,7 @@
 ######in [HelloController.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC02/src/com/songyl/webmvc/controller/HelloController.java)
  
 	@Controller
-      	public class HelloController {
+	public class HelloController {
        		@RequestMapping("hello")
        		public String hello(String username, String userpsw, String gender, Model model) {
 	        	model.addAttribute("username", username);
