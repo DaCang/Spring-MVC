@@ -6,18 +6,18 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
-public class helloController extends AbstractController {
+public class HelloController extends AbstractController {
     @Override
     public ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response)
 	    throws Exception {
 	String username = request.getParameter("username");
 	String userpsw = request.getParameter("userpsw");
 	String gender = request.getParameter("gender");
-	System.out.println("ÓÃ»§Ãû£º" + username);
-	System.out.println("ÃÜÂë£º" + userpsw);
-	System.out.println("ĞÔ±ğ£º" + gender);
+	System.out.println("ç”¨æˆ·åï¼š" + username);
+	System.out.println("å¯†ç ï¼š" + userpsw);
+	System.out.println("æ€§åˆ«ï¼š" + gender);
 
-	//·µ»ØÊı¾İºÍÒ³Ãæ
+	//è¿”å›æ•°æ®å’Œé¡µé¢
 	ModelAndView m_v = new ModelAndView("index");
 	m_v.addObject("username", username);
 	m_v.addObject("gender", gender);
