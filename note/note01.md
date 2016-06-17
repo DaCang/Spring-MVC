@@ -28,10 +28,9 @@
 		 <input type="submit" value="login" /><br />
 	</form>
  
-#### 5)创建[HelloController](https://github.com/DaCang/Spring-MVC/blob/master/msMVC01/src/main/java/com/songyl/webmvc/controller/HelloController.java)，继承自AbstractController，重写handleRequestInternal
-              并返回数据和页面
+#### 5)创建[HelloController](https://github.com/DaCang/Spring-MVC/blob/master/msMVC01/src/main/java/com/songyl/webmvc/controller/HelloController.java)，继承自AbstractController，重写handleRequestInternal并返回数据和页面
 	ModelAndView m_v = new ModelAndView("index", "command", "LOGIN SUCCESS, " + hello);
-       return m_v;
+        return m_v;
        
 #### 6)配置视图解析器以及HelloController
 	<bean name="/hello.do" class="com.songyl.webmvc.controller.HelloController"></bean>
