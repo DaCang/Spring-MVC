@@ -13,8 +13,8 @@
 	<bean
 		class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping">
 	</bean>
-	<!-- 配置 helloController-->
-	<bean name="/hello.do" class="com.songyl.webmvc.controller.helloController"></bean>
+	<!-- 配置 HelloController-->
+	<bean name="/hello.do" class="com.songyl.webmvc.controller.HelloController"></bean>
 	<!--配置视图解析器  -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
          <!-- 前缀 -->
