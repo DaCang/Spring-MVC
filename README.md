@@ -15,9 +15,9 @@
 	<!-- 扫描器 -->
 	<context:component-scan base-package="com"/>
 >in [HelloController.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC02/src/com/songyl/webmvc/controller/HelloController.java)
+  
    @Controller
    public class HelloController {
-
       @RequestMapping(value = "/hello.do")
       public String hello(String username, String userpsw, String gender, Model model) {
          ......
