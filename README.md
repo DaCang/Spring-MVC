@@ -16,4 +16,9 @@
 
 >@Controller and  @RequestMapping(value = "/hello.do")
      
-   
+#### 2.2[方式二](https://github.com/DaCang/Spring-MVC/tree/master/SpringMVC03) 
+>最主要的一点，此方式的项目中没有类似springmvc02-servlet.xml的springmvc配置文件<br/>
+>而是定义了一个配置springmvc的类
+##### 2.2.1 in [WebConfig.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC03/src/com/songyl/webmvc/springconfig/WebConfig.java)
+
+>@Configuration and @ComponentScan(basePackages = "com.songyl.webmvc.controller")
