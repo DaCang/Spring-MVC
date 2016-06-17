@@ -17,4 +17,4 @@
 	        	model.addAttribute("gender", gender);
 	        	return "index";
         	}
-      }
+      　}
