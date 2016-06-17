@@ -11,10 +11,10 @@
  
 	@Controller
       	public class HelloController {
-       	@RequestMapping("hello")
-       	public String hello(String username, String userpsw, String gender, Model model) {
-	        model.addAttribute("username", username);
-	        model.addAttribute("gender", gender);
-	        return "index";
-        }
+       		@RequestMapping("hello")
+       		public String hello(String username, String userpsw, String gender, Model model) {
+	        	model.addAttribute("username", username);
+	        	model.addAttribute("gender", gender);
+	        	return "index";
+        	}
       }
