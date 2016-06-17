@@ -9,17 +9,12 @@
 
 ######in [HelloController.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC02/src/com/songyl/webmvc/controller/HelloController.java)
  
-｀@Controller
+@Controller
       public class HelloController {
        @RequestMapping("hello")
        public String hello(String username, String userpsw, String gender, Model model) {
-	        System.out.println("用户名：" + username);
-	        System.out.println("密码：" + userpsw);
-	        System.out.println("性别：" + gender);
-        
 	        model.addAttribute("username", username);
 	        model.addAttribute("gender", gender);
-        
 	        return "index";
         }
-      }｀
+      }
