@@ -7,7 +7,7 @@
 	   1. 根据BeanName找到对应的Controller--> 
 	     <bean class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping"> 
 		 </bean>
-	 <!-- 配置 HelloController -->
+	 <!-- 配置 UserController -->
 	     <bean name="/user.do" class="com.songyl.webmvc.controller.UserController"></bean> 
 
 	   
@@ -22,8 +22,14 @@
 			</props>
 		  </property>
 	    </bean>
-	<!-- 配置 HelloController -->
+	<!-- 配置 UserController -->
        <bean id="userController"  class="com.songyl.webmvc.controller.UserController"></bean>
 
 	   
 ### 3. 根据ControllerClassName找到对应的Controller
+
+	<!--  3.根据ControllerClassName找到对应的Controller-->
+	   <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+	   </bean>
+	<!-- 配置 UserController -->
+	   <bean  class="com.songyl.webmvc.controller.UserController"></bean>
