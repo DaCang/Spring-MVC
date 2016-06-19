@@ -33,6 +33,7 @@
 
 ### 4. 请求参数的[三种方式](https://github.com/DaCang/Spring-MVC/tree/master/SpringMVC06)：
 >在[UserController.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC06/src/com/songyl/webmvc/controller/UserController.java)里面配置
+
 ### 4.1 通过设置HttpServletRequest来获取请求参数
 ### 4.2 直接设置参数
 ### 4.2 通过封装一个类的属性来传递参数
