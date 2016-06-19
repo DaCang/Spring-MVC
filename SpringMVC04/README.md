@@ -11,6 +11,19 @@
 	     <bean name="/user.do" class="com.songyl.webmvc.controller.UserController"></bean> 
 
 	   
-### 2. 根据SimpleUrlHandler找到对应的Controller 
+### 2. 根据SimpleUrlHandler找到对应的Controller
+
+	<!--  2.根据SimpleUrlHandler找到对应的Controller -->
+	    <bean
+		 class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		  <property name="mappings">
+			<props>
+				<prop key="/userInfo.do">userController</prop>
+			</props>
+		  </property>
+	    </bean>
+	<!-- 配置 HelloController -->
+       <bean id="userController"  class="com.songyl.webmvc.controller.UserController"></bean>
+
 	   
 ### 3. 根据ControllerClassName找到对应的Controller
