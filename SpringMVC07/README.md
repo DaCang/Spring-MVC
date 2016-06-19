@@ -1,21 +1,21 @@
-<h3>返回页面数据：Model</h3>
+## 返回页面数据：Model
 
-<p>1) HttpServletRequest request直接使用</p>
+#### 1. HttpServletRequest request直接使用
 
 <pre><code>request.setAttribute("username", username);
 </code></pre>
 
-<p>2)使用ModelAndView</p>
+#### 2. 使用ModelAndView
 
 <pre><code>m_v.addObject("username", username);
 </code></pre>
 
-<p>3)使用Model model</p>
+#### 3. 使用Model model
 
 <pre><code>model.addAttribute("username", username);
 </code></pre>
 
-<p>4)使用Map<String, String> map</p>
+#### 4. 使用Map<String, String> map</p>
 
 <pre><code>map.put("username", userInfo.getUserName());
 </code></pre>
