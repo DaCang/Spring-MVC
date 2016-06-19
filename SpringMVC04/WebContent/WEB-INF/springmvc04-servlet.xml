@@ -9,10 +9,13 @@
 		     http://www.springframework.org/schema/context 
 		     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	<!-- 配置HandlerMapping 作用：
-	   1. 根据BeanName找到对应的Controller 
-	     <bean class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping"> 
-		 </bean>
-	   2.根据SimpleUrlHandler找到对应的Controller 
+	   1. 根据BeanName找到对应的Controller--> 
+	     <!-- <bean class="org.springframework.web.servlet.mvc.support.ControllerBeanNameHandlerMapping"> 
+		 </bean> -->
+	<!-- 配置 UserController -->
+	<!-- <bean name="/user.do" class="com.songyl.webmvc.controller.UserController"></bean>  -->
+	
+	<!--  2.根据SimpleUrlHandler找到对应的Controller 
 	    <bean
 		 class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		  <property name="mappings">
@@ -20,19 +23,20 @@
 				<prop key="/userInfo.do">userController</prop>
 			</props>
 		  </property>
-	    </bean>
-	-->
-	<!-- 3.根据ControllerClassName找到对应的Controller-->
+	    </bean>-->
+       <!-- 配置 UserController -->
+       <!-- <bean id="userController"  class="com.songyl.webmvc.controller.UserController"></bean>  -->
+	 
+	<!--  3.根据ControllerClassName找到对应的Controller-->
 	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
 	</bean>
 	<!-- 配置 UserController -->
-	<!-- <bean id="userController" name="/user.do" class="com.songyl.webmvc.controller.UserController"></bean> -->
-	 <bean  class="com.songyl.webmvc.controller.UserController"></bean>
+	  <bean  class="com.songyl.webmvc.controller.UserController"></bean>
 	<!--配置视图解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- 前缀 -->
-		<property name="prefix" value="WEB-INF/view/"></property>
+		<property name="prefix" value="/view/"></property>
 		<!-- 后缀 -->
 		<property name="suffix" value=".jsp"></property>
 	</bean>
