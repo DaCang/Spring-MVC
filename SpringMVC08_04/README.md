@@ -2,6 +2,7 @@
 ***
 这里优化了几处查询条件
 >in [ListService.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC08_04/src/com/songyl/webmvc/service/ListService.java) 
+
 1. 查询条件为空
 
 2. 查询条件不在数据库
