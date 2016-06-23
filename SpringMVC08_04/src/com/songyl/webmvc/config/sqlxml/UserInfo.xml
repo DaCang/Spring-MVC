@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="UserInfo">
+
+  <resultMap type="com.songyl.webmvc.entity.UserInfo" id="UserInfoResult">
+    <id column="USERID" jdbcType="INTEGER" property="userId"/>
+    <result column="USERNAME" jdbcType="VARCHAR" property="userName"/>
+    <result column="AGE" jdbcType="INTEGER" property="age"/>
+    <result column="NOTES" jdbcType="VARCHAR" property="notes"/>
+    
+  </resultMap>
+  
+  <!-- 配置SQL语句，并提供给SqlSession调用
+       id="selectOne" 是唯一标识的
+   -->
+   <!-- 选择ID -->
+  
+  <!-- 选择单条信息记录 -->
+  <select id="selectOne" parameterType="com.songyl.webmvc.entity.UserInfo" resultMap="UserInfoResult">
+    select * from USERINFO where 1=1
+        <if test="userId != null and !&quot;&quot;.equals(userId)">
+          and userId=#{userId}</if>
+  </select>
+
+
+</mapper>
