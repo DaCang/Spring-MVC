@@ -53,6 +53,7 @@ public class UserController {
     }
 
     @RequestMapping("/ajaxUserInfo")
+    //@ResponseBody 将内容或对象作为 HTTP 响应正文返回
     public @ResponseBody UserInfo userAjax(HttpServletRequest request, Model model, String userId,
 	    HttpServletResponse response) {
 	ListService listService = new ListService();
