@@ -15,14 +15,14 @@ import com.songyl.webmvc.service.ListService;
 
 /**
  * @author Administrator
- * ·µ»ØÒ³ÃæÊı¾İ£ºModel
+ * è¿”å›é¡µé¢æ•°æ®ï¼šModel
  *
  */
 @Controller
 public class UserController {
 
     /**
-     * @·½·¨ÃèÊö TODO
+     * @æ–¹æ³•æè¿° TODO
      * @param userNum
      * @param response 
      *  
@@ -31,18 +31,18 @@ public class UserController {
     public void userId(String userNum, HttpServletResponse response) {
 
 	try {
-	    //ÏìÓ¦
+	    //å“åº”
 	    response.setContentType("text/html");
 	    response.setCharacterEncoding("utf-8");
 	    PrintWriter out = response.getWriter();
 	    if ("".equals(userNum)) {
-		out.println("ÕÊºÅ²»ÄÜÎª¿Õ£¡");
+		out.println("å¸å·ä¸èƒ½ä¸ºç©ºï¼");
 	    } else {
-		System.out.println("ÕÊºÅ:" + userNum);
+		System.out.println("å¸å·:" + userNum);
 		if ("songyl".equals(userNum)) {
-		    out.println("ÊäÈëÓĞÎó£¡ÖØĞÂÊäÈë£¡");
+		    out.println("è¾“å…¥æœ‰è¯¯ï¼é‡æ–°è¾“å…¥ï¼");
 		} else {
-		    out.print("ÕÊºÅ¿ÉÒÔÊ¹ÓÃ£¡");
+		    out.print("å¸å·å¯ä»¥ä½¿ç”¨ï¼");
 		}
 	    }
 	    out.flush();
@@ -57,9 +57,9 @@ public class UserController {
 	    HttpServletResponse response) {
 	ListService listService = new ListService();
 
-	UserInfo userInfo = listService.selectOne(userId);
+	UserInfo user = listService.selectOne(userId);
 
-	return userInfo;
+	return user;
 
     }
 
