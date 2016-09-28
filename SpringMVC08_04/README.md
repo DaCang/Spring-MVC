@@ -16,7 +16,7 @@
 		if (id != null && !"".equals(id)) {
 	    	Pattern pattern = Pattern.compile("[0-9]*");
 	    	Matcher isNum = pattern.matcher(id);
-	    	if (!isNum.matches()) {
+	    	if (!isNum.matches()) {//可利用js在前台进行验证
 			user.setUserName("NONE");
 			user.setAge(0);
 			user.setNotes("请输入数字！！");
