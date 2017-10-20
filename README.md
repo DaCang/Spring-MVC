@@ -41,15 +41,14 @@
 
 ![QQ20171019151108.jpg](http://www.z4a.net/images/2017/10/19/QQ20171019151108.jpg)
 
+        
+###  `<c:forEach>`标签用于通用数据循环，它有以下属性
 
-#### this is table 
-
-
-
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
+        |属 性	|描 述	          |是否必须   |缺省值
+        |--------|:--------------|:----------|:--------|
+        | items  |进行循环的项目  |	否	    |无       |
+        begin	开始条件	否	0
+        end	结束条件	否	集合中的最后一个项目
+        step	步长	否	1
+        var	代表当前项目的变量名	否	无
+        varStatus	显示循环状态的变量	否	无
