@@ -42,3 +42,14 @@
 ![QQ20171019151108.jpg](http://www.z4a.net/images/2017/10/19/QQ20171019151108.jpg)
 
 
+#### this is table 
+
+
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
