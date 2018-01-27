@@ -9,7 +9,7 @@
 	<context:component-scan base-package="com"/>
 
 >* in [HelloController.java](https://github.com/DaCang/Spring-MVC/blob/master/SpringMVC02/src/com/songyl/webmvc/controller/HelloController.java) 
-
+```java
 		@Controller
 	 	public class HelloController {
        		@RequestMapping("hello")
@@ -19,3 +19,4 @@
 	        	return "index";
         	}
 	    }
+```
